@@ -204,23 +204,18 @@ void del(int index)
 		error('l');
 		return;
 	}
-	else if (index < 1)
+	else if (n == 1)
 	{
 		clear();
 		return;
 	}
 
-	else if (index > n)
+	else if (index == 0)
 	{
-		error('l');
+		clear();
 		return;
 	}
 
-	else if (n == 1)
-	{
-		free(head);
-		head = NULL;
-	}
 	else
 	{
 		int i;
